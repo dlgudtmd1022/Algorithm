@@ -9,6 +9,7 @@ public class Baek5397 {
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
         int N = Integer.parseInt(br.readLine());
+
         for(int i = 0; i < N; i++){
             Stack<Character> word = new Stack<>();
             Stack<Character> keep = new Stack<>();
