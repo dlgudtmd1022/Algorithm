@@ -17,16 +17,14 @@ public class Baek2480 {
         }
 
         int result = 0;
-        int max = arr[0];
+
         if(arr[0] == arr[1] && arr[0] == arr[2]){
             result = 10000 + arr[0] * 1000;
         } else if (arr[0] == arr[1] || arr[0] == arr[2] || arr[1] == arr[2]) {
-            if(arr [0] == arr[1]){
-                result = 1000 + arr[0] * 100;
-            } else if (arr[1] == arr[2]) {
+            if(arr[1] == arr[2]){
                 result = 1000 + arr[1] * 100;
             } else {
-                result = 1000 + arr[2] * 100;
+                result = 1000 + arr[0] * 100;
             }
         }else {
             result = Math.max(Math.max(arr[0], arr[1]), arr[2]) * 100;
